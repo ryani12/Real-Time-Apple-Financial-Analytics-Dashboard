@@ -11,7 +11,6 @@
    - **GitHub Repository Setup**:
      - Created a GitHub repository to manage version control for the project.
      - The repository will hold all project files including code, data schemas, and documentation.
-     - GitHub URL: [Provide your repository URL here]
 
    - **Commit Strategy**:
      - Committing changes at the end of each significant task or milestone.
@@ -24,7 +23,7 @@
 #### 2. Market Data Schema Design:
    - **Azure SQL Database Setup**:
      - Setup Azure SQL Database for structured data storage.
-     - Database Name: [Provide your database name here]
+     - Database Name: AppleFinancialDB
 
    - **Market Data Table Creation**:
      - Created a table named `AAPL_StockData` to store the stock market data of Apple Inc.
