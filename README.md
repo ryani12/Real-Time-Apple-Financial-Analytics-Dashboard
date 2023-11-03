@@ -3,45 +3,50 @@
 
 ---
 
-## Project Documentation
+### Introduction:
+This project aims at constructing a real-time financial analytics dashboard for Apple Inc., unveiling a panoramic view of its financial health and market standing.
 
 ### Phase 1: Project Setup and Database Design
+- Setting up Version Control via GitHub.
+- Configuring Azure SQL Database for structured data and Azure Cosmos DB for unstructured/semi-structured data like sentiment data from news articles.
 
-#### 1. Version Control:
-   - **GitHub Repository Setup**:
-     - Created a GitHub repository to manage version control for the project.
-     - The repository will hold all project files including code, data schemas, and documentation.
+### Phase 2: Data Ingestion and ETL Pipeline Construction
+- Harnessing data from diverse sources including market data from Alpha Vantage or Yahoo Finance API, economic data from FRED and World Bank, company financials from SEC EDGAR, sentiment data from News API or Aylien News API, and analyst ratings from TipRanks.
+- Designing and implementing ETL pipelines using Apache Airflow to ingest and process data into respective databases.
 
-   - **Commit Strategy**:
-     - Committing changes at the end of each significant task or milestone.
-     - Meaningful commit messages to describe the changes made.
+### Phase 3: Data Warehousing
+- Architecting a data warehouse schema using Azure Synapse Analytics to house data from various databases for analytical purposes.
 
-   - **Branching Strategy**:
-     - Utilizing feature branching for working on new features or tasks.
-     - Merging branches back into the main branch upon completion and review.
+### Phase 4: Big Data Processing
+- Utilizing Azure HDInsight for processing and analyzing large datasets.
 
-#### 2. Market Data Schema Design:
-   - **Azure SQL Database Setup**:
-     - Setup Azure SQL Database for structured data storage.
-     - Database Name: AppleFinancialDB
+### Phase 5: Data Governance, Security, and Compliance
+- Instituting data governance policies and ensuring data privacy compliance using Azure Purview.
 
-   - **Market Data Table Creation**:
-     - Created a table named `AAPL_StockData` to store the stock market data of Apple Inc.
-     - SQL Script: In "1_Project_Setup_and_Database_Design\database_design\market_data"
+### Phase 6: Cloud Computing and Containerization
+- Setting up cloud-based data storage and computing resources on Azure.
+- Employing Docker and Azure Kubernetes Service (AKS) for containerization and orchestration.
 
-   - **Indexing**:
-     - An index is created on the `Date` column by default due to the primary key constraint, which will speed up queries against this column.
+### Phase 7: Data Visualization, Machine Learning, and Advanced Analytics
+- Developing a real-time analytics dashboard using Power BI.
+- Experimenting with machine learning models using Azure Databricks and Azure Machine Learning to derive insights.
 
-   - **Constraints**:
-     - The `Date` column is set as the primary key to ensure each day's data is unique.
-     - The `NOT NULL` constraint is used to ensure that all data columns are filled.
+### Phase 8: Continuous Integration/Continuous Deployment (CI/CD)
+- Establishing CI/CD pipelines using Azure DevOps for automated testing and deployment.
 
-   - **Data Types**:
-     - Utilized `DECIMAL(10,2)` for price columns to accommodate prices up to 10 digits with 2 decimal places.
-     - Utilized `BIGINT` for Volume to accommodate large numbers.
-     - Utilized `DATE` for the Date column to store date values.
+### Phase 9: Monitoring and Optimization
+- Monitoring performance of data pipelines, databases, and cloud resources using Datadog and Azure's monitoring tools.
+- Analyzing performance metrics to optimize resources for efficiency and cost-effectiveness.
 
-   - **Data Import**:
-     - Imported the CSV file generated from Alpha Vantage into the `AAPL_StockData` table to populate it with market data.
+### Phase 10: Documentation and Presentation
+- Documenting design decisions, data models, and code in the GitHub repository.
+- Preparing a presentation to showcase the architecture, insights derived from the data, and its impact on investment decision-making regarding AAPL.
 
+### Additional Notes:
+- Setting up webhooks or streaming APIs for real-time data access.
+- Adhering to the terms of service and data usage policies of the data sources.
+- Collaborating with financial analysts for data validation.
+- Considering a feedback loop for continuous improvement based on user feedback and evolving project requirements.
+
+Through these phases, the project not only focuses on gathering and analyzing data but also on ensuring data integrity, security, and creating a streamlined pathway from data collection to insight generation, contributing to informed investment decision-making regarding Apple Inc.
 ---
