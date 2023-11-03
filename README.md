@@ -1,7 +1,8 @@
 # Real-Time-Apple-Financial-Analytics-Dashboard
 
 
----
+Introduction:
+This project aims at constructing a real-time financial analytics dashboard for Apple Inc., unveiling a panoramic view of its financial health and market standing.
 
 ### Introduction:
 This project aims at constructing a real-time financial analytics dashboard for Apple Inc., unveiling a panoramic view of its financial health and market standing.
